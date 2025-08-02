@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Friendship Day 💛</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="nameSection">
+    <h1>💛 Happy Friendship Day! 💛</h1>
+    <p class="subtitle">Enter your name to receive a sweet message</p>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button onclick="showMessage()">Submit</button>
+  </div>
+
+  <div class="container" id="mainContent" style="display: none;">
+    <h2 id="personalMessage"></h2>
+
+    <button id="quoteBtn">💬 Get a Friendship Quote</button>
+    <p id="quoteBox" class="quote-box">Click the button to get inspired!</p>
+
+    <hr style="margin: 40px 0;">
+
+<h3>📩 Send a Message to Your Friend</h3>
+<input type="text" id="friendName" placeholder="Friend's name" />
+<br><br>
+<textarea id="friendMessage" rows="5" placeholder="Type your message here..."></textarea>
+<br><br>
+<button onclick="generateFriendMessage()">Generate Message</button>
+
+<div id="messagePreview" class="quote-box" style="margin-top: 20px;"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
